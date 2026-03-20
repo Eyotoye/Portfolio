@@ -3,10 +3,119 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for a game development graduate application featuring Land Battle Chess and a physically based renderer."
+    />
+    <title>Eyot Oye | Game Development Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Portfolio</h1>
-    <p>This site is under construction.</p>
+    <div class="page-shell">
+      <main class="portfolio">
+        <section class="intro" aria-labelledby="portfolio-title">
+          <p class="eyebrow">Graduate Application Portfolio</p>
+          <h1 id="portfolio-title">Game systems, rendering, and technical craft.</h1>
+          <p class="lead">
+            A focused selection of projects highlighting interactive design,
+            graphics programming, and implementation discipline.
+          </p>
+        </section>
+
+        <section class="projects" aria-label="Featured projects">
+          <article class="project-card">
+            <a
+              class="project-media"
+              href="https://github.com/Eyotoye/landBattleChess"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Land Battle Chess on GitHub"
+            >
+              <img
+                class="project-image image-land-battle"
+                src="pic/1.png"
+                alt="Land Battle Chess gameplay board with special units and night mode interface."
+              />
+            </a>
+
+            <div class="project-content">
+              <div class="project-heading">
+                <p class="project-label">Project 01</p>
+                <h2>Land Battle Chess</h2>
+              </div>
+
+              <ul class="project-points">
+                <li>Dual rule systems with strategic gameplay depth</li>
+                <li>Night mode with PvZ-inspired special units</li>
+              </ul>
+
+              <ul class="project-links" aria-label="Land Battle Chess links">
+                <li>
+                  <a
+                    href="https://github.com/Eyotoye/landBattleChess"
+                    target="_blank"
+                    rel="noreferrer"
+                    >GitHub</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://eyotoye.github.io/landBattleChess-manual/index.html"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Manual</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a
+              class="project-media"
+              href="https://github.com/Eyotoye/GraphicsProject"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Physically Based Renderer on GitHub"
+            >
+              <img
+                class="project-image image-renderer"
+                src="pic/2.bmp"
+                alt="Physically based renderer output with patterned wall, translucent model, and reflective materials."
+              />
+            </a>
+
+            <div class="project-content">
+              <div class="project-heading">
+                <p class="project-label">Project 02</p>
+                <h2>Physically Based Renderer</h2>
+              </div>
+
+              <ul class="project-points">
+                <li>Path tracing and photon mapping pipeline</li>
+                <li>Global illumination with realistic light transport</li>
+              </ul>
+
+              <ul class="project-links" aria-label="Physically Based Renderer links">
+                <li>
+                  <a
+                    href="https://github.com/Eyotoye/GraphicsProject"
+                    target="_blank"
+                    rel="noreferrer"
+                    >GitHub</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
